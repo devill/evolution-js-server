@@ -1,7 +1,7 @@
 "use strict";
 
 let mid_layer_size = 20;
-let sight_resolution = 10;
+let sight_resolution = 7;
 
 function randomMatrix(rows, cols) {
   let result = [];
@@ -17,7 +17,7 @@ function randomMatrix(rows, cols) {
 
 function* generate() {
   this.body = {
-    first_layer: randomMatrix(mid_layer_size, sight_resolution*4+5),
+    first_layer: randomMatrix(mid_layer_size, sight_resolution*4+3),
     second_layer: randomMatrix(4, mid_layer_size),
     egg_color: Math.random() * 360,
     color: Math.random() * 360,
